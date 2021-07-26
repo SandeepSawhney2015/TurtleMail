@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Karantina:wght@300&family=Shadows+Into+Light&family=Zen+Dots&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #34e89e, #0f3443);
+
+}
+/*
+ background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
+background: linear-gradient(to right, #11998e, #38ef7d); 
+ background: linear-gradient(to right, #34e89e, #0f3443); 
+*/
+h1{
+  font-family: 'Zen Dots', cursive;
+}
+
+input[type=text], input[type=password] {
+  outline: none;
+  border: none;
+  font-family: 'Antonio', sans-serif;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+  border: 1px solid grey; 
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder {
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+}
+
+input[type=submit] {
+  font-family: 'Zen Dots', cursive;
+  transition: 0.15s all;
+  background-color: linear-gradient(45deg, purple, pink, purple);
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background: linear-gradient(to right, #00b09b, #96c93d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  transition: 0.15s all;
+  font-size: 24px;
+  padding: 15px;
+  box-shadow: 0px 15px 18px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+}
+
+textarea {
+  outline: none;
+  border: none;
+  font-family: 'Antonio', sans-serif;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 500px;
+  height: 250px;
+}
+
+textarea::placeholder {
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.container > a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Zen Dots', cursive;
+  background: linear-gradient(to top left, #34e89e, #0f3443);
+
+
+}
+
+.growbutton {
+  text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 14px;
+  transition: 0.3s all;
+}
+
+.growbutton:hover {
+  transition: 0.3s all;
+  font-size: 24px;
+}
+
+.button {
+  background-color: seagreen;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 5%;
+  right: 2.5%;
+  background: linear-gradient(to top left, #283c86, #45a247);
+
+}
+
+.button > img {
+  width: 35px;
+  height: 35px;
+  filter: invert(1);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 5%;
+  right: 2.5%;
+}
+
+.back-button {
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: fixed;
+  top: 2.5%;
+  left: 2.5%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.back-button > img {
+  height: 30px;
+  
+}
+
+.back-button > img:hover{
+  filter: invert(1)
+}
+.back-button:hover {
+  transition: 0.3s all;
+  background: linear-gradient(to bottom right, #34e89e, #0f3443);
+  
+}
+
+#message-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#message-list > center > li {
+  background-color: aliceblue;
+  width: 50vw;
+  padding: 4px;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#message-list > center > li:hover {
+  transition: 0.3s all;
+  border-radius: 50px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#message-list > center > li > a {
+  text-decoration: none;
+}
+
+#message-list > center > li > a > h3 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 35px; 
+}
+
+#message-list > center > li > a > h4 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 20px;
+}
+
+.elsender{
+  font-size: 40px;
+  font-family: 'Antonio', sans-serif;
+}
+
+.elsubject{
+  font-size: 30px;
+  font-family: 'Antonio', sans-serif;
+}
+
+.elmessage{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Antonio', sans-serif;
+}
+
+@media only screen and (min-width : 320px) {
+  .elmessage {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width : 720px) {
+  .elmessage {
+    font-size: 20px;
+  }
+}
+
+label{
+  font-family: 'Antonio', sans-serif;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+h5{
+  font-family: 'Antonio', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.messagetimedate{
+  font-family: 'Antonio', sans-serif;
+  font-size: 25px;
+  font-style: italic;
+}
+
+#timedate {
+  position: absolute;
+  top: -2%;
+  right: 2.5%;
+  margin: none;
+}
+
+
+.read {
+  /* change the background color to something grayish */
+  background-color: #CBCBCB !important;
+}
+
+.unread {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  float: right;
+  border-radius: 100%;
+}
