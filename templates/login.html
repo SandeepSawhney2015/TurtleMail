@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+      body{
+        background: linear-gradient(to bottom right, #00b09b, #96c93d); 
+      }
+      
+    </style>
+  </head>  
+  <body>
+    <center>
+      <br><br><br>
+      <h1>Welcome to TurtleMail!<h1>
+      <h1>The most environmentally safe mail service on the planet!<h1>
+      <h3>{{message}}</h3>
+      <form action="/login" method="POST">
+      <input type="text" placeholder="Put your username" name="username"></input>
+      <br>
+      <br>
+      <input type="password" placeholder="Put your password" name="password"></input>
+      <br>
+      <br>
+      <input type="submit" value="Login"></input>
+      </form>
+      <br>
+      <a href="/signup">Sign Up Here</a>
+    </center>
+  </body>  
+</html>
